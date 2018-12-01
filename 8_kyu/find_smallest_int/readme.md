@@ -1,4 +1,4 @@
-# Find the smallest integer in the array
+# Find the smallest integer in the array
 
 ### Description:
 Given an array of integers your solution should find the smallest integer.
