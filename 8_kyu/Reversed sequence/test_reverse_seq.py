@@ -2,7 +2,7 @@ import unittest
 from reverse_seq import reverse_seq
 
 
-class Testreverse_seq(unittest.TestCase):
+class TestReverseSeq(unittest.TestCase):
 
     def test_reverse_seq(self):
         self.assertEqual(reverse_seq(5), [5, 4, 3, 2, 1])
