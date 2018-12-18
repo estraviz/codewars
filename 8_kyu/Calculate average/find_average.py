@@ -1,6 +1,8 @@
 '''Calculate average
 '''
 
+from functools import reduce
+
 
 def find_average(array):
-    return sum(number for number in array)/len(array) if len(array) else 0
+    return reduce(lambda x, y: x + y, array)/len(array) if array else 0
