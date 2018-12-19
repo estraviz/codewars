@@ -2,6 +2,10 @@ from replace_exclamation import replace_exclamation
 
 
 def test_replace_exclamation():
+    assert replace_exclamation("Hi!") == "H!!"
+    assert replace_exclamation("!Hi! Hi!") == "!H!! H!!"
+    assert replace_exclamation("aeiou") == "!!!!!"
+    assert replace_exclamation("ABCDE") == "!BCD!"
     assert replace_exclamation("aeiou") == "!!!!!"
     assert replace_exclamation("AEIOU") == "!!!!!"
     assert replace_exclamation("AeIoU") == "!!!!!"
