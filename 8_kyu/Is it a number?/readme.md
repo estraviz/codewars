@@ -1,6 +1,6 @@
 # Is it a number
 
-### Description
+### Description
 Given a string s, write a method (function) that will return true if it's a valid single integer or floating number or false if it's not.
 
 Valid examples, should return `True`:
