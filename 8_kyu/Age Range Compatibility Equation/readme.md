@@ -3,7 +3,9 @@
 ## Description
 
 Everybody knows the classic "[half your age plus seven](https://en.wikipedia.org/wiki/Age_disparity_in_sexual_relationships#The_.22half-your-age-plus-seven.22_rule)" dating rule that a lot of people follow. It's the 'recommended' age range in which to date someone.
+
 ![Age Range Compatibility Equation](http://weknowmemes.com/wp-content/uploads/2014/08/age-range-compatibility-equation.jpg)
+
 with: `minimum age <= your age <= maximum age`
 
 ### Task
