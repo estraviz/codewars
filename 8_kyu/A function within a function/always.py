@@ -3,6 +3,4 @@
 
 
 def always(n=0):
-    def never():
-        return n
-    return never
+    return lambda: n
