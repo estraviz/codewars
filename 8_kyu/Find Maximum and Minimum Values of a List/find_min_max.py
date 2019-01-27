@@ -1,10 +1,12 @@
 """Find Maximum and Minimum Values of a List
 """
+_min = min
+_max = max
 
 
 def min(arr):
-    return sorted(arr)[0]
+    return _min(arr)
 
 
 def max(arr):
-    return sorted(arr)[-1]
+    return _max(arr)
