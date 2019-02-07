@@ -17,14 +17,12 @@ class Fighter(object):
 
 
 def declare_winner(fighter1, fighter2, first_attacker):
-    rounds_fighter1 = ceil(fighter2.health/fighter1.damage_per_attack)
-    rounds_fighter2 = ceil(fighter1.health/fighter2.damage_per_attack)
+    fighter1.lives = ceil(fighter1.health/fighter2.damage_per_attack)
+    fighter2.lives = ceil(fighter2.health/fighter1.damage_per_attack)
+    if is_number_of_lives_equal(fighter1, fighter2):
+        return first_attacker
+    return max([fighter1, fighter2], key=lambda f: f.lives).name
 
-    if first_attacker == fighter1.name:
-        if rounds_fighter2 + 1 <= rounds_fighter1:
-            return fighter2.name
-        return fighter1.name
-    else:
-        if rounds_fighter1 + 1 <= rounds_fighter2:
-            return fighter1.name
-        return fighter2.name
+
+def is_number_of_lives_equal(f1, f2):
+    return f1.lives == f2.lives
