@@ -3,9 +3,7 @@
 
 
 def nb_year(p0, percent, aug, p):
-    num_inhab_EoY = p0
-    num_years = 0
-    while num_inhab_EoY < p:
-        num_years += 1
-        num_inhab_EoY = (1 + percent/100)*num_inhab_EoY + aug
-    return num_years
+    if p0 >= p:
+        return 0
+    else:
+        return 1 + nb_year((1 + percent/100)*p0 + aug, percent, aug, p)
