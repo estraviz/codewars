@@ -5,5 +5,5 @@
 def last(*args):
     try:
         return args[-1][-1]
-    except:
+    except Exception:
         return args[-1]
