@@ -4,7 +4,7 @@
 
 Your task here is the find the GCF ([Greatest Common Factor](http://www.math.com/school/subject1/lessons/S1U3L2GL.html)) of any two numbers passed into a method, which will return one integer answer as an output.
 
-### Examples
+### Examples
 
 ```python
 find_GCF(4, 6) # Should return 2
