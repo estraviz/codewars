@@ -11,3 +11,4 @@ def test_find_GCF():
     assert find_GCF(100, 100) == 100
     assert find_GCF(100, 40) == 20
     assert find_GCF(40, 100) == 20
+    assert find_GCF(60, 96) == 12
