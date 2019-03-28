@@ -1,6 +1,6 @@
 # Sum Even Fibonacci Numbers
 
-## Description
+## Description
 
 Write a func named `SumEvenFibonacci` that takes a parameter of type int and returns a value of type int.
 
