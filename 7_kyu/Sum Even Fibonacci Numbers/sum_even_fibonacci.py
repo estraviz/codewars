@@ -4,11 +4,16 @@
 
 def sum_even_fibonacci(limit):
     lst = []
+    for num in fib(limit):
+        if num > limit:
+            break
+        if num % 2 == 0:
+            lst.append(num)
+    return sum(lst)
+
+
+def fib(num):
     a, b = 1, 2
     while True:
-        if a % 2 == 0:
-            lst.append(a)
+        yield a
         a, b = b, a + b
-        if a > limit:
-            break
-    return sum(lst)
