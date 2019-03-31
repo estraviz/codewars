@@ -1,6 +1,6 @@
 # Tribonacci Sequence
 
-## Description
+## Description
 
 Well met with Fibonacci bigger brother, AKA **Tribonacci**.
 
