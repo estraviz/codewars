@@ -3,14 +3,7 @@
 from functools import reduce
 
 
-def persistence(num):
-    if num < 10:
+def persistence(n):
+    if n < 10:
         return 0
-    count = 0
-    while True:
-        num_list = [int(n) for n in str(num)]
-        num = reduce(lambda x, y: x*y, num_list)
-        count += 1
-        if num < 10:
-            break
-    return count
+    return 1 + persistence(reduce(lambda x, y: x*y, [int(n) for n in str(n)]))
