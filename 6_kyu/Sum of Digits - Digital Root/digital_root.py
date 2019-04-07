@@ -3,6 +3,4 @@
 
 
 def digital_root(n):
-    while n > 9:
-        n = sum(int(x) for x in str(n))
-    return n
+    return n if n < 10 else digital_root(sum(int(x) for x in str(n)))
