@@ -2,27 +2,31 @@
 """
 
 
-def get_function(sequence):
-    """Find a linear relationship of the kind: f = n*x + m"""
-    m = sequence[0]
-    n = sequence[1] - m
+def get_function(f):
+    """Let's consider a linear relationship of the kind: y=A*x+B"""
+    A, B = f[1] - f[0], f[0]
 
-    if sequence[2] != n*2 + m or \
-       sequence[3] != n*3 + m or \
-       sequence[4] != n*4 + m:
-        return 'Non-linear sequence'
+    for i, f_i in enumerate(f):
+        if f_i != A*i + B:
+            return 'Non-linear sequence'
 
-    if n != 0:
-        if m < 0:
-            if n == 1:
-                return "f(x) = x - {}".format(abs(m))
-            return "f(x) = {}x - {}".format(n, abs(m))
-        elif m > 0:
-            if n == 1:
-                return "f(x) = x + {}".format(m)
-            return "f(x) = {}x + {}".format(n, m)
+    if B == 0:
+        if A == 1:
+            return 'f(x) = x'
         else:
-            if n == 1:
-                return "f(x) = x"
-            return "f(x) = {}x".format(n)
-    return "f(x) = {}".format(m)
+            return 'f(x) = {}x'.format(A)
+
+    if A == 0:
+        return 'f(x) = {}'.format(B)
+
+    if A == 1:
+        return 'f(x) = x {} {}'.format(sign(B), abs(B))
+
+    if A == -1:
+        return 'f(x) = -x {} {}'.format(sign(B), abs(B))
+
+    return 'f(x) = {}x {} {}'.format(A, sign(B), abs(B))
+
+
+def sign(b):
+    return '-' if b < 0 else '+'
