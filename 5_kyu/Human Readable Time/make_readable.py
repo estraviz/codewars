@@ -3,7 +3,6 @@
 
 
 def make_readable(seconds):
-    hrs = seconds//3600
-    mins = (seconds - 3600*hrs)//60
-    secs = seconds - 3600*hrs - 60*mins
-    return f'{hrs:02d}:{mins:02d}:{secs:02d}'
+    hours, seconds = divmod(seconds, 3600)
+    minutes, seconds = divmod(seconds, 60)
+    return f'{hours:02d}:{minutes:02d}:{seconds:02d}'
