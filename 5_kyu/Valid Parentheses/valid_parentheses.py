@@ -3,8 +3,6 @@
 
 
 def valid_parentheses(string):
-    if string.count('(') != string.count(')'):
-        return False
     count = 0
     for c in string:
         if c == '(':
@@ -13,4 +11,4 @@ def valid_parentheses(string):
             count -= 1
         if count < 0:
             return False
-    return True
+    return count == 0
