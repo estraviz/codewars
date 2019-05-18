@@ -5,13 +5,12 @@
 def valid_parentheses(string):
     if string.count('(') != string.count(')'):
         return False
-    lst = []
+    count = 0
     for c in string:
         if c == '(':
-            lst.append(c)
+            count += 1
         if c == ')':
-            if not lst:
-                return False
-            else:
-                lst.pop(0)
-    return (not lst)
+            count -= 1
+        if count < 0:
+            return False
+    return True
