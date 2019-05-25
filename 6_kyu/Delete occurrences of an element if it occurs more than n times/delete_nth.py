@@ -2,16 +2,5 @@
 """
 
 
-import numpy as np
-
-
 def delete_nth(order, max_e):
-    counts, erase = {}, []
-    for i, elem in enumerate(order):
-        if elem not in counts:
-            counts[elem] = 1
-        else:
-            counts[elem] += 1
-            if counts[elem] > max_e:
-                erase.append(i)
-    return np.delete(order, erase).tolist()
+    return [x for i, x in enumerate(order) if order[:i].count(x) < max_e]
