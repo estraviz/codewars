@@ -1,6 +1,6 @@
 # Last digit of a large number
 
-## Description
+## Description
 
 Define a function that takes in two non-negative integers `a` and `b` and returns the last decimal digit of `a^b`. Note that `a` and `b` may be very large!
 
