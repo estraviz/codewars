@@ -1,6 +1,6 @@
 # Sort the odd
 
-## Description
+## Description
 
 You have an array of numbers.
 Your task is to sort ascending odd numbers but even numbers must be on their places.
