@@ -3,4 +3,4 @@
 
 
 def ends_with(string, ending):
-    return ending in string[len(string)-len(ending):]
+    return string.endswith(ending)
