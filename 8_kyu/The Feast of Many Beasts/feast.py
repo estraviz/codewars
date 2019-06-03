@@ -3,4 +3,4 @@
 
 
 def feast(beast, dish):
-    return True if beast[0] == dish[0] and beast[-1] == dish[-1] else False
+    return beast.startswith(dish[0]) and beast.endswith(dish[-1])
