@@ -3,4 +3,4 @@
 
 
 def two_sort(array):
-    return '***'.join(list(sorted(array)[0]))
+    return '***'.join(min(array))
