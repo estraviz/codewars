@@ -3,4 +3,4 @@
 
 
 def add_length(str_):
-    return [" ".join([elem, str(len(elem))]) for elem in str_.split()]
+    return [f'{elem} {len(elem)}' for elem in str_.split()]
