@@ -1,0 +1,112 @@
+from is_digit import is_digit
+
+
+def test_is_digit_sample():
+    assert is_digit("") is False
+    assert is_digit("7") is True
+    assert is_digit(" ") is False
+    assert is_digit("a") is False
+    assert is_digit("a5") is False
+
+
+def test_is_digit_full():
+    assert is_digit("14") is False
+    assert is_digit(" ") is False
+    assert is_digit("!") is False
+    assert is_digit("\"") is False
+    assert is_digit("#") is False
+    assert is_digit("$") is False
+    assert is_digit("%") is False
+    assert is_digit("&") is False
+    assert is_digit("'") is False
+    assert is_digit("(") is False
+    assert is_digit(")") is False
+    assert is_digit("*") is False
+    assert is_digit("+") is False
+    assert is_digit(",") is False
+    assert is_digit("-") is False
+    assert is_digit(".") is False
+    assert is_digit("/") is False
+    assert is_digit("0") is True
+    assert is_digit("1") is True
+    assert is_digit("2") is True
+    assert is_digit("3") is True
+    assert is_digit("4") is True
+    assert is_digit("5") is True
+    assert is_digit("6") is True
+    assert is_digit("7") is True
+    assert is_digit("8") is True
+    assert is_digit("9") is True
+    assert is_digit(":") is False
+    assert is_digit(";") is False
+    assert is_digit("<") is False
+    assert is_digit("=") is False
+    assert is_digit(">") is False
+    assert is_digit("?") is False
+    assert is_digit("@") is False
+    assert is_digit("A") is False
+    assert is_digit("B") is False
+    assert is_digit("C") is False
+    assert is_digit("D") is False
+    assert is_digit("E") is False
+    assert is_digit("F") is False
+    assert is_digit("G") is False
+    assert is_digit("H") is False
+    assert is_digit("I") is False
+    assert is_digit("J") is False
+    assert is_digit("K") is False
+    assert is_digit("L") is False
+    assert is_digit("M") is False
+    assert is_digit("N") is False
+    assert is_digit("O") is False
+    assert is_digit("P") is False
+    assert is_digit("Q") is False
+    assert is_digit("R") is False
+    assert is_digit("S") is False
+    assert is_digit("T") is False
+    assert is_digit("U") is False
+    assert is_digit("V") is False
+    assert is_digit("W") is False
+    assert is_digit("X") is False
+    assert is_digit("Y") is False
+    assert is_digit("Z") is False
+    assert is_digit("[") is False
+    assert is_digit("\\") is False
+    assert is_digit("]") is False
+    assert is_digit("^") is False
+    assert is_digit("_") is False
+    assert is_digit("`") is False
+    assert is_digit("a") is False
+    assert is_digit("b") is False
+    assert is_digit("c") is False
+    assert is_digit("d") is False
+    assert is_digit("e") is False
+    assert is_digit("f") is False
+    assert is_digit("g") is False
+    assert is_digit("h") is False
+    assert is_digit("i") is False
+    assert is_digit("j") is False
+    assert is_digit("k") is False
+    assert is_digit("l") is False
+    assert is_digit("m") is False
+    assert is_digit("n") is False
+    assert is_digit("o") is False
+    assert is_digit("p") is False
+    assert is_digit("q") is False
+    assert is_digit("r") is False
+    assert is_digit("s") is False
+    assert is_digit("t") is False
+    assert is_digit("u") is False
+    assert is_digit("v") is False
+    assert is_digit("w") is False
+    assert is_digit("x") is False
+    assert is_digit("y") is False
+    assert is_digit("z") is False
+    assert is_digit("{") is False
+    assert is_digit("|") is False
+    assert is_digit("}") is False
+    assert is_digit("~") is False
+    assert is_digit("1\n0") is False
+    assert is_digit("1\n") is False
+    assert is_digit("1 ") is False
+    assert is_digit(" 1") is False
