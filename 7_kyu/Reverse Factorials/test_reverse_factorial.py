@@ -26,4 +26,3 @@ def test_random_tests():
         else:
             test_exp = 'None'
         assert reverse_factorial(num) == test_exp
-
