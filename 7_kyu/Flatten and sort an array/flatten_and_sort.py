@@ -2,6 +2,8 @@
 Flatten and sort an array
 """
 
+from itertools import chain
+
 
 def flatten_and_sort(array):
-    return sorted([elem for lst in array for elem in lst])
+    return sorted(chain(*array))
