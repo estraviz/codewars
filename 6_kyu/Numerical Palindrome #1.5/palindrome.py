@@ -9,9 +9,9 @@ def palindrome(num, s):
 
 
 def get_palindromes(n, s):
-    lst = []
+    lst, n = [], max(n, 11)
     while len(lst) < s:
-        if n > 9 and is_palindrome(n):
+        if is_palindrome(n):
             lst.append(n)
         n += 1
     return lst
