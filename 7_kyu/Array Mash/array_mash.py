@@ -2,9 +2,8 @@
 Array Mash
 """
 
+from itertools import chain
+
 
 def array_mash(a, b):
-    output = []
-    for elem_a, elem_b in zip(a, b):
-        output.extend([elem_a, elem_b])
-    return output
+    return list(chain.from_iterable([item for item in zip(a, b)]))
