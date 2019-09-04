@@ -1,6 +1,6 @@
 # Array Mash
 
-## Description
+## Description
 
 Mash 2 arrays together so that the returning array has alternating elements of the 2 arrays. Both arrays will always be the same length.
 
