@@ -7,7 +7,8 @@ BUILDING = 'Y'
 
 
 def waterbombs(fire, w):
-    """Function that returns the minimum required waterbombs to extinguish the fires in the array"""
+    """Function that returns the minimum required waterbombs to extinguish the
+       fires in the array"""
     num_waterbombs = 0
     for item in filter(None, fire.split(BUILDING)):
         if len(item) < w:
