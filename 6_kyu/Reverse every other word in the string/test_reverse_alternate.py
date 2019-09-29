@@ -9,3 +9,6 @@ def test_reverse_alternate():
         "Reverse this string, please!") == "Reverse siht string, !esaelp"
     assert reverse_alternate("Have a beer") == "Have a beer"
     assert reverse_alternate("") == ""
+    assert reverse_alternate("   ") == ""
+    assert reverse_alternate("This is not a test ") == "This si not a test"
+    assert reverse_alternate("This       is a  test ") == "This si a tset"
