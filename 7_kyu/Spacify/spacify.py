@@ -4,4 +4,4 @@ Spacify
 
 
 def spacify(string):
-    return ' '.join([s for s in string])
+    return ' '.join(string)
