@@ -8,7 +8,7 @@
 
 * [Histogram - V1](https://www.codewars.com/kata/57c6c2e1f8392d982a0000f2)
 
-### Background
+### Background
 
 A 6-sided die is rolled a number of times and the results are plotted as a character-based histogram.
 
