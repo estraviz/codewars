@@ -1,6 +1,6 @@
 # Collatz
 
-## Description
+## Description
 
 A collatz sequence, starting with a positive integer `n`, is found by repeatedly applying the following function to `n` until `n == 1`:
 
@@ -11,7 +11,7 @@ n = { n/2   for even n
 
 A more detailed description of the collatz conjecture may be found [on Wikipedia](https://en.wikipedia.org/wiki/Collatz_conjecture).
 
-## The Problem
+## The Problem
 
 Create a function `collatz` that returns a collatz sequence string starting with the positive integer argument passed into the function, in the following form:
 
