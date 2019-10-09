@@ -1,6 +1,6 @@
 # Going to zero or to infinity
 
-## Description
+## Description
 
 Consider the following numbers (where `n!` is `factorial(n)`):
 
