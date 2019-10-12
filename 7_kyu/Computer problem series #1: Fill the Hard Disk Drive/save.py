@@ -4,10 +4,9 @@
 
 
 def save(sizes, hd):
-    total = count = 0
-    for size in sizes:
-        total += size
-        if total > hd:
-            break
-        count += 1
-    return count
+    sum = 0
+    for i, size in enumerate(sizes):
+        sum += size
+        if sum > hd:
+            return i
+    return len(sizes)
