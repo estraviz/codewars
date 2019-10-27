@@ -3,9 +3,13 @@ Remove duplicate words
 """
 
 
-def remove_duplicate_words(s):
-    unique_words = []
+def gen(s):
+    set_of_words = set()
     for word in s.split():
-        if word not in unique_words:
-            unique_words.append(word)
-    return ' '.join(unique_words)
+        if word not in set_of_words:
+            set_of_words.add(word)
+            yield word
+
+
+def remove_duplicate_words(s):
+    return ' '.join(list(gen(s)))
