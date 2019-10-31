@@ -2,15 +2,16 @@
 Converting Currency II
 """
 
+currencies = {'USD': (0, '$', 1.1363636), 'EUR': (-1, '€', 1 / 1.1363636)}
+
 
 def solution(to_cur, values):
-    currencies = {'USD': (0, '$', 1.1363636), 'EUR': (-1, '€', 1 / 1.1363636)}
     try:
-        (pos, symbol, factor) = currencies.get(to_cur)
-        return list(
-            map(
-                lambda value:
-                f'{symbol if pos == 0 else ""}{round(value * factor, 2):,.2f}{symbol if pos == -1 else ""}',
-                values))
-    except KeyError:
+        (position, symbol, multiplier) = currencies.get(to_cur)
+    except Exception:
         return None
+    return list(
+        map(
+            lambda amount:
+            f'{symbol if position == 0 else ""}{round(amount * multiplier, 2):,.2f}{symbol if position == -1 else ""}',
+            values))
