@@ -1,12 +1,12 @@
 # Basic Math (Add or Subtract)
 
-## Description
+## Description
 
 In this kata, you will do addition and subtraction on a given string. The return value must be also a string.
 
 Note: the input will not be empty.
 
-### Examples
+### Examples
 
 ```python
 "1plus2plus3plus4"  --> "10"
