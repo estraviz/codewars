@@ -1,6 +1,6 @@
 # V A P O R C O D E
 
-## Description
+## Description
 
 ASC Week 1 Challenge 4 (Medium #1)
 
