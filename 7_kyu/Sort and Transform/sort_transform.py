@@ -7,7 +7,7 @@ def sort_transform(arr):
     e1 = ''.join(get_word(arr))
     e2 = ''.join(get_word(sorted(arr)))
     e3 = ''.join(get_word(sorted(arr, reverse=True)))
-    e4 = ''.join(compose_list(sorted([chr(x) for x in arr])))
+    e4 = e2
     return '-'.join([e1, e2, e3, e4])
 
 
