@@ -1,6 +1,6 @@
 # Sort and Transform
 
-## Description
+## Description
 
 Given an array of numbers, return a string made up of four parts:
 
