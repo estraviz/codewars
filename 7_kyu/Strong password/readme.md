@@ -1,0 +1,14 @@
+# Strong password
+
+## Description
+
+Your users passwords were all stole in the Yahoo! hack, and it turns out they have been lax in creating secure passwords. Create a function that checks their new password (passed as a string) to make sure it meets the following requirements:
+
+* Between `8` and `20` characters.
+* Contains only the following characters (and at least one character from each category):
+  * `uppercase` letters,
+  * `lowercase` letters,
+  * `digits`,
+  * the special characters `!@#$%^&*?`.
+
+Return `"valid"` if passed or else `"not valid"`.
