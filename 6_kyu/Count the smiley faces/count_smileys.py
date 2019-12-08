@@ -4,15 +4,10 @@ Count the smiley faces!
 
 
 def count_smileys(arr):
-    count = 0
-    if arr:
-        eyes, noses, mouths = [{':', ';'}, {'-', '~'}, {')', 'D'}]
-        for smiley in arr:
-            if len(smiley) == 2 or len(smiley) == 3:
-                eye, nose, mouth = smiley[0], smiley[1:-1], smiley[-1]
-                if eye in eyes and mouth in mouths:
-                    if nose:
-                        if nose not in noses:
-                            continue
-                    count += 1
-    return count
+    return sum(1 for s in arr if is_a_smiley(s))
+
+
+def is_a_smiley(s):
+    eyes, noses, mouths = (':', ';'), ('-', '~', ''), (')', 'D')
+    eye, nose, mouth = s[0], s[1:-1], s[-1]
+    return True if eye in eyes and nose in noses and mouth in mouths else False
