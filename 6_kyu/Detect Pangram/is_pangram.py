@@ -2,12 +2,10 @@
 Detect Pangram
 """
 
-from string import ascii_letters
+from string import ascii_lowercase as ascii_low
+from collections import Counter
 
 
 def is_pangram(s):
-    dic = dict((chr.lower(), 0) for chr in ascii_letters)
-    for c in s.lower():
-        if c in dic.keys():
-            dic[c] += 1
-    return all(value >= 1 for value in dic.values())
+    count = Counter(c for c in s.lower() if c in ascii_low)
+    return all(v >= 1 for v in count.values()) and len(count) == len(ascii_low)
