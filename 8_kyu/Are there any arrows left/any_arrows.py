@@ -4,9 +4,5 @@ Are there any arrows left?
 
 
 def any_arrows(arrows):
-    for arrow in arrows:
-        if 'damaged' in arrow and arrow['damaged']:
-            continue
-        if 'damage' not in arrow:
-            return True
-    return False
+    return True if any(('damaged' not in arrow or arrow['damaged'] is False)
+                       for arrow in arrows) else False
