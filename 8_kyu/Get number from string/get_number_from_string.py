@@ -2,8 +2,6 @@
 Get number from string
 """
 
-from string import digits
 
-
-def get_number_from_string(string):
-    return int(''.join(ch for ch in string if ch in digits))
+def get_number_from_string(s):
+    return int(''.join(c for c in s if c.isdigit()))
