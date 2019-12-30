@@ -63,6 +63,6 @@ SURNAME = {
 def alias_gen(f_name, l_name):
     first = FIRST_NAME.get(f_name.title()[0])
     second = SURNAME.get(l_name.title()[0])
-    if first is None or second is None:
-        return "Your name must start with a letter from A - Z."
-    return f'{first} {second}'
+    return f'{first} {second}' \
+        if first and second \
+        else "Your name must start with a letter from A - Z."
