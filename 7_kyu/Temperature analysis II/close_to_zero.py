@@ -4,11 +4,8 @@ Temperature analysis II
 
 
 def close_to_zero(t):
-    close = None
-    if t:
-        for x in (int(x) for x in t.split()):
-            if not close or abs(x) < abs(close) or x == -1 * close and x > 0:
-                close = x
-                if close == 0:
-                    break
-    return close or 0
+    if not t:
+        return 0
+    t = [int(x) for x in t.split()]
+    close = min(t, key=lambda x: abs(x))
+    return abs(close) if close < 0 and abs(close) in t else close
