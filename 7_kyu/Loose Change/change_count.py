@@ -2,8 +2,6 @@
 Loose Change!
 """
 
-from collections import Counter
-
 CHANGE = {
     'penny': 0.01,
     'nickel': 0.05,
@@ -14,4 +12,4 @@ CHANGE = {
 
 
 def change_count(change):
-    return f'${sum(CHANGE.get(type, 0)*amount for type, amount in Counter(change.split()).items()):.2f}'
+    return f'${sum(CHANGE[type_] for type_ in change.split()):.2f}'
