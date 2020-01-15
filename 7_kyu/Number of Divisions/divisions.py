@@ -2,10 +2,8 @@
 Number of Divisions
 """
 
+from math import log
+
 
 def divisions(n, divisor):
-    count = 0
-    while n >= divisor:
-        n /= divisor
-        count += 1
-    return count
+    return int(log(n, divisor))
