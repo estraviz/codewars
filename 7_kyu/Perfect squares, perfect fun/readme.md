@@ -1,10 +1,10 @@
 # Perfect squares, perfect fun
 
-## Description
+## Description
 
 Given an integer, if the length of it's digits is a perfect square, return a square block of `sqroot(length) * sqroot(length)`. If not, simply return `"Not a perfect square!"`.
 
-### Examples
+### Examples
 
 1212 returns:
 
