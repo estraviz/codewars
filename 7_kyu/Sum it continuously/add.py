@@ -6,10 +6,10 @@ Sum it continuously
 def add(l):
     new_l = []
     accum = 0
-    if type(l) != list:
+    if not isinstance(l, list):
         return 'Invalid input'
     for num in l:
-        if type(num) == int:
+        if isinstance(num, int):
             accum += num
             new_l.append(accum)
         else:
