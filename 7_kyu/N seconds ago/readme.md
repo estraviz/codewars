@@ -1,0 +1,5 @@
+# N seconds ago
+
+## Description
+
+Get `n` seconds before the target time. See Example Test Cases about the format.
