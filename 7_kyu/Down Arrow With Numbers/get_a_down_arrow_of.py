@@ -4,13 +4,11 @@ Down Arrow With Numbers
 
 
 def get_a_down_arrow_of(n):
-    output = []
+    output = ""
     k = n
     while k > 0:
-        left = ''.join(str(i)[-1] for i in range(1, k))
-        middle = str(k)[-1]
-        right = left[::-1]
-        output.append(left + middle + right + '\n' + ' ' *
-                      (n - k + 1)) if k > 1 else output.append(middle)
+        s = ''.join(str(i)[-1] for i in range(1, k))
+        output += str(k)[-1] if k == 1 else s + str(
+            k)[-1] + s[::-1] + '\n' + ' ' * (n - k + 1)
         k -= 1
-    return ''.join(output)
+    return output
