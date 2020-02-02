@@ -4,4 +4,4 @@ Invisible cubes
 
 
 def not_visible_cubes(n):
-    return 0 if n < 3 else (n - 2)**3
+    return (n > 2) * (n - 2)**3
