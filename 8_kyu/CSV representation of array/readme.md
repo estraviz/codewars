@@ -1,6 +1,6 @@
 # CSV representation of array
 
-## Description
+## Description
 
 Create a function that returns the CSV representation of a two-dimensional numeric array.
 
