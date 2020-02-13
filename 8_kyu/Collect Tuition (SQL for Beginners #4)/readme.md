@@ -12,4 +12,4 @@ You are working for a local school, and you are responsible for collecting tuiti
 * `mentor` (string)
 * `tuition_received` (Boolean)
 
-This kata is part of a collection of SQL challenges for beginners. You can take the rest of the challenges here!
+This kata is part of a collection of SQL challenges for beginners. You can take the rest of the challenges [here](https://www.codewars.com/collections/sql-for-beginners)!
