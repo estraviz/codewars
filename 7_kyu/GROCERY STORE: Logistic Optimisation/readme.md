@@ -1,6 +1,6 @@
 # GROCERY STORE: Logistic Optimisation
 
-## Description
+## Description
 
 You are the owner of the Grocery Store. All your products are in the database, that you have created after CodeWars SQL excercises!:)
 
