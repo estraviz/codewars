@@ -12,7 +12,7 @@ Here, there are 4 different substrings: `721`, `245`, `111111`, and `9`. The sum
 
 Write a function `largest_sum` which takes a string and returns the maximum of the sums of the substrings. In the example above, your function should return `11`.
 
-### Notes
+### Notes
 
 * A substring can have length 0. For example, `123004560` has three substrings, and the middle one has length 0.
 * All inputs will be valid strings of digits, and the last digit will always be `0`.
