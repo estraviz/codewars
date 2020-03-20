@@ -12,7 +12,7 @@ You have to write a function `printer_error` which given a string will output th
 
 The string has a length greater or equal to one and contains only letters from `a`to `z`.
 
-### Examples
+### Examples
 
 ```python
 s="aaabbbbhaijjjm"
