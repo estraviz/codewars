@@ -6,4 +6,4 @@ SELECT
   LENGTH(arms :: TEXT) AS legs,
   LENGTH(characteristics) AS arms,
   LENGTH(id :: TEXT) AS characteristics
-FROM monsters;
+FROM monsters
