@@ -9,10 +9,9 @@ WITH RECURSIVE factorial (n, fact) AS (
     n + 1,
     (n + 1) * fact
   FROM factorial
-  WHERE
-    n < 16
 )
 SELECT
   n,
   fact
-FROM factorial;
+FROM factorial
+LIMIT 17
