@@ -15,7 +15,7 @@ Which will win: `1 / n!` or `(1! + 2! + 3! + ... + n!)`?
 
 Are these numbers going to `0` because of `1/n!` or to infinity due to the sum of factorials or to another number?
 
-## Task
+## Task
 
 Calculate `(1 / n!) * (1! + 2! + 3! + ... + n!)` for a given `n`, where `n` is an integer greater or equal to `1`.
 
