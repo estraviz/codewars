@@ -1,10 +1,10 @@
 # Sums of Perfect Squares
 
-## Description
+## Description
 
 The task is simply stated. Given an integer `n` (`3 < n < 10`<sup>`9`</sup>), find the length of the smallest list of perfect squares which add up to n. Come up with the best algorithm you can; you'll need it!
 
-### Examples
+### Examples
 
 * `sum_of_squares(17) = 2`
 17 = 16 + 1 (4 and 1 are perfect squares).
