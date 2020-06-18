@@ -1,10 +1,10 @@
 # Valid Parentheses
 
-## Description
+## Description
 
 Write a function called that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return `True` if the string is valid, and `False` if it's invalid.
 
-## Examples
+## Examples
 
 ```python
 "()"              =>  true
