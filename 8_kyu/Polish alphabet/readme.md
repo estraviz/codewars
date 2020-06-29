@@ -1,6 +1,6 @@
 # Polish alphabet
 
-## Description
+## Description
 
 There are 32 letters in the [Polish alphabet](https://en.wikipedia.org/wiki/Polish_alphabet): 9 vowels and 23 consonants.
 
