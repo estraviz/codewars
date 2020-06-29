@@ -1,6 +1,6 @@
 # 1. Find all active students
 
-## Description
+## Description
 
 Create a simple SELECT query to display student information of all ACTIVE `students`.
 
