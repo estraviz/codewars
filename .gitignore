@@ -3,6 +3,6 @@ __pycache__/
 *.swp
 *.pyc
 .vscode/
-venv/
+venv*/
 .idea
 .Rhistory
