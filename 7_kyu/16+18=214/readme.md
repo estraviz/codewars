@@ -1,6 +1,6 @@
-# 16+18=214
+# 16+18=214
 
-## Description
+## Description
 
 For this Kata you will have to forget how to add two numbers together.
 
