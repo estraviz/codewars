@@ -1,12 +1,12 @@
 # Filling an array (part 2)
 
-## Description
+## Description
 
 Following on from [Part 1](https://github.com/estraviz/codewars/tree/master/8_kyu/Filling%20an%20array%20(part%201)), part 2 looks at some more complicated array contents.
 
 So let's try filling an array with...
 
-### ...square numbers
+### ...square numbers
 The numbers from `1` to `n*n`:
 
 ```python
