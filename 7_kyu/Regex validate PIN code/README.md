@@ -1,0 +1,15 @@
+# Regex validate PIN code
+
+## Description
+
+ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but **exactly** 4 digits or exactly 6 digits.
+
+If the function is passed a valid PIN string, return `True`, else return `False`.
+
+### Examples
+
+```python
+"1234"   -->  True
+"12345"  -->  False
+"a234"   -->  False
+```
