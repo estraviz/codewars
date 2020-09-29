@@ -1,4 +1,4 @@
-from solution import pairs, is_consecutive
+from solution import pairs
 
 
 def test_pairs():
