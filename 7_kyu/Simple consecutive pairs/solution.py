@@ -3,5 +3,4 @@
 
 
 def pairs(arr):
-    tuples = zip(*[arr[i::2] for i in range(2)])
-    return sum(1 for (x, y) in tuples if max(x, y) - min(x, y) == 1)
+    return sum(max(x, y) - min(x, y) == 1 for x, y in zip(arr[::2], arr[1::2]))
