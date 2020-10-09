@@ -1,6 +1,6 @@
 # Mirror, mirror, on the wall...
 
-## Description
+## Description
 
 You get a list of integers, and you have to write a function `mirror` that returns the "mirror" (or symmetric) version of this list: i.e. the middle element is the greatest, then the next greatest on both sides, the the next greatest, and so on...
 
