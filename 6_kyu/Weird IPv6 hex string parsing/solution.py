@@ -6,10 +6,6 @@ def parse_IPv6(iPv6):
     output = ""
     i = 0
     while i < len(iPv6):
-        chunk = iPv6[i : i + 4]
-        sum_ = 0
-        for n in chunk:
-            sum_ += int(n, 16)
-        output += str(sum_)
+        output += str(sum(int(n, 16) for n in iPv6[i : i + 4]))
         i += 5
     return output
