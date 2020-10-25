@@ -5,4 +5,4 @@ from itertools import groupby
 
 
 def remove_consecutive_duplicates(s):
-    return " ".join(word for word, group in groupby(s.split(" ")))
+    return " ".join(word for word, _ in groupby(s.split(" ")))
