@@ -3,5 +3,4 @@
 
 
 def two_oldest_ages(ages):
-    ages.sort()
-    return [ages.pop(), ages.pop()][::-1]
+    return sorted(ages)[-2:]
