@@ -1,5 +1,5 @@
 # MakeLowerCase
 
-## Description
+## Description
 
 Write function makeLowerCase.
