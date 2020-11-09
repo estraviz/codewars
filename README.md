@@ -2,6 +2,7 @@ These are my solutions to [codewars](http://codewars.com) [code katas](https://e
 
 * Python (mainly)
 * SQL
+* Haskell (recently :)
 
 **IMPORTANT NOTE:**
 
