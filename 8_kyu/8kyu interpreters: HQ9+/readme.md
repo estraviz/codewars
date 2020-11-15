@@ -1,6 +1,6 @@
 # 8kyu interpreters: HQ9+
 
-## Description
+## Description
 
 You task is to implement an simple interpreter for the notorious esoteric language [HQ9+](https://esolangs.org/wiki/HQ9+) that will work for a single character input:
 
