@@ -1,5 +1,7 @@
 """Floating point comparison"""
 
+from math import isclose
+
 
 def approx_equals(a, b):
-    return abs(a - b) < 0.001
+    return isclose(a, b, abs_tol=1e-3)
