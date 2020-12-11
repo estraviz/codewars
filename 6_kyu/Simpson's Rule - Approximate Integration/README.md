@@ -1,6 +1,6 @@
 # Simpson's Rule - Approximate Integration
 
-## Description
+## Description
 
 An integral:
 
