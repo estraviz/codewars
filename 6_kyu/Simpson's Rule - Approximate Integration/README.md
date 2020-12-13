@@ -1,6 +1,6 @@
 # Simpson's Rule - Approximate Integration
 
-## Description
+## Description
 
 An integral:
 
@@ -18,7 +18,7 @@ We want to try Simpson's rule with the function f:
 
 The task is to write a function called `simpson` with parameter `n` which returns the value of the integral of f on the interval `[0, pi]` (pi being 3.14159265359...).
 
-## Notes
+## Notes
 
 * Don't round or truncate your results. See in "RUN EXAMPLES" the function `assertFuzzyEquals` or testing.
 * `n` will always be even.
