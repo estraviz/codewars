@@ -2,13 +2,4 @@
 
 
 def is_valid_set(quantities, shapes, colours, patterns):
-    lengths = [
-        len(set(quantities)),
-        len(set(shapes)),
-        len(set(colours)),
-        len(set(patterns)),
-    ]
-    for length in lengths:
-        if length not in {1, 3}:
-            return False
-    return True
+    return all(len(set(fs)) in (1, 3) for fs in (quantities, shapes, colours, patterns))
