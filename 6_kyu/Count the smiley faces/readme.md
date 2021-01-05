@@ -1,6 +1,6 @@
 # Count the smiley faces
 
-## Description
+## Description
 
 Given an array (arr) as an argument complete the function `countSmileys` that should return the total number of smiling faces.
 
