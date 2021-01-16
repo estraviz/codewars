@@ -2,12 +2,4 @@
 
 
 def count_arara(n):
-    adaks = " ".join(n // 2 * ["adak"])
-    anane = "" if n % 2 == 0 else "anane"
-    if adaks:
-        if anane:
-            return adaks + " " + anane
-        else:
-            return adaks
-    else:
-        return anane
+    return " ".join(["adak"] * (n // 2) + ["anane"] * (n % 2))
