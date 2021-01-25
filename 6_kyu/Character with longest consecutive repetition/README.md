@@ -1,6 +1,6 @@
 # Character with longest consecutive repetition
 
-## Description
+## Description
 
 For a given string `s` find the character `c` (or `C`) with longest consecutive repetition and return:
 
