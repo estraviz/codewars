@@ -1,14 +1,11 @@
 """Memoized Fibonacci"""
 
-memo = {}
+from functools import lru_cache
 
 
+@lru_cache(maxsize=1000)
 def fibonacci(n):
-    if n in memo:
-        return memo[n]
-    if n in [1, 2]:
-        memo[n] = 1
-        return 1
-    elif n > 2:
-        memo[n] = fibonacci(n - 1) + fibonacci(n - 2)
-    return memo[n]
+    if n in [0, 1]:
+        return n
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
