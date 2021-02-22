@@ -1,12 +1,9 @@
 """Luck check"""
 
 
-def luck_check(string):
+def luck_check(s):
     try:
-        int(string)
-        mid = len(string) // 2
-        left = string[:mid]
-        right = string[mid + 1:] if len(string) % 2 else string[mid:]
-        return sum(int(x) for x in left) == sum(int(x) for x in right)
+        left, right = len(s) // 2, (len(s) + 1) // 2
+        return sum(int(x) for x in s[:left]) == sum(int(x) for x in s[right:])
     except Exception:
         raise ValueError
