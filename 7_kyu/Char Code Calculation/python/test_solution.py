@@ -11,6 +11,7 @@ data = [
     ('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', 96),
 ]
 
+
 @pytest.mark.parametrize(
     "x, result", data
 )
