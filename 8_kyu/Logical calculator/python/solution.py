@@ -1,16 +1,13 @@
 """Logical calculator"""
 
+import operator
+from functools import reduce
+
 
 def logical_calc(array, op):
-    result = None
-    for i, x in enumerate(array):
-        if i == 0:
-            result = x
-        else:
-            if op == "AND":
-                result = result and x
-            elif op == "OR":
-                result = result or x
-            elif op == "XOR":
-                result = result ^ x
-    return result
+    operation = {
+        "AND": operator.__and__,
+        "OR": operator.__or__,
+        "XOR": operator.__xor__,
+    }
+    return reduce(operation.get(op), array)
