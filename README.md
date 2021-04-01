@@ -1,8 +1,9 @@
 These are my solutions to [codewars](http://codewars.com) [code katas](https://en.wikipedia.org/wiki/Kata_(programming)). My profile in codewars can be found [here](https://www.codewars.com/users/estraviz). Languages used here are (at the moment):
 
 * Python (mainly)
-* SQL
-* Haskell (recently :)
+* Java (gradually)
+* SQL (from time to time)
+* Haskell (scarcely :)
 
 **IMPORTANT NOTE:**
 
