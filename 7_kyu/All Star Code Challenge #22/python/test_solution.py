@@ -15,5 +15,5 @@ data = [
 @pytest.mark.parametrize(
     "seconds, result", data
 )
-def test_to_time(seconds, result):
+def test_should_properly_work_with_example_test_cases(seconds, result):
     assert to_time(seconds) == result
