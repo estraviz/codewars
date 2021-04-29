@@ -2,4 +2,4 @@
 
 
 def find_longest(arr):
-    return int(max((str(x) for x in arr), key=len))
+    return max(arr, key=lambda x: len(str(x)))
