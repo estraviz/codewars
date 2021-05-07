@@ -15,5 +15,5 @@ data = [
 @pytest.mark.parametrize(
     "s, expected", data
 )
-def test_words_to_marks(s ,expected):
+def test_words_to_marks(s, expected):
     assert words_to_marks(s) == expected
