@@ -7,27 +7,14 @@ EMPTY = ''
 
 def dashatize(n):
     if n is None:
-        return 'None'
-
-    output, before, after = (EMPTY, EMPTY, EMPTY)
+        return "None"
 
     try:
         str_n = str(abs(n))
-        for x, y in zip(str_n, str_n[1:]):
-            if output.endswith(DASH) and before == DASH:
-                before = EMPTY
-            output += before + x + after
-            if len(output) == 1 and int(output) % 2 != 0:
-                output += DASH
-            before, after = (DASH, DASH) if is_odd(int(y)) else (EMPTY, EMPTY)
-
-        if output.endswith(DASH) and before == DASH:
-            before = EMPTY
-        output += before + str_n[-1]
+        return "".join([DASH + x + DASH if is_odd(x) else x for x in str_n]).replace("--", DASH).lstrip(DASH).rstrip(DASH)
     except TypeError:
-        pass
-    return output
+        return EMPTY
 
 
-def is_odd(n):
-    return n % 2
+def is_odd(x):
+    return int(x) in (1, 3, 5, 7, 9)
