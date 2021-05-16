@@ -1,6 +1,7 @@
 """Largest pair sum in array"""
 
+import heapq
+
 
 def largest_pair_sum(numbers):
-    sorted_numbers = sorted(numbers, reverse=True)
-    return sorted_numbers[0] + sorted_numbers[1]
+    return sum(heapq.nlargest(2, numbers))
