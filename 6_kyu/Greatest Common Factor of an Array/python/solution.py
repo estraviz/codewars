@@ -1,12 +1,13 @@
 """Greatest Common Factor of an Array"""
 
+import math
+
 
 def greatest_common_factor(seq):
     temp = seq[0]
     for k in seq[1:]:
-        temp = gcd(temp, k)
+        temp = math.gcd(temp, k)
     return temp
 
 
-def gcd(i, j):
-    return j if i % j == 0 else gcd(j, i % j)
+# Note: In Python 3.9 the whole list could be passed but CW's kata was for 3.8
