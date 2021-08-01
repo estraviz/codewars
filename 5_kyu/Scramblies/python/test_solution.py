@@ -4,16 +4,16 @@ from solution import scramble
 
 
 tests = [
-    ('rkqodlw','world', True),
-    ('cedewaraaossoqqyt','codewars', True),
-    ('katas','steak', False),
-    ('scriptjavx','javascript', False),
-    ('scriptingjava','javascript', True),
-    ('scriptsjava','javascripts', True),
-    ('javscripts','javascript', False),
-    ('aabbcamaomsccdd','commas', True),
-    ('commas','commas', True),
-    ('sammoc','commas', True),
+    ('rkqodlw', 'world', True),
+    ('cedewaraaossoqqyt', 'codewars', True),
+    ('katas', 'steak', False),
+    ('scriptjavx', 'javascript', False),
+    ('scriptingjava', 'javascript', True),
+    ('scriptsjava', 'javascripts', True),
+    ('javscripts', 'javascript', False),
+    ('aabbcamaomsccdd', 'commas', True),
+    ('commas', 'commas', True),
+    ('sammoc', 'commas', True),
 ]
 
 
