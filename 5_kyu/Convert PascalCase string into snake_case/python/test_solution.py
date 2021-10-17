@@ -8,6 +8,10 @@ tests = [
     ("MoviesAndBooks", "movies_and_books"),
     ("App7Test", "app7_test"),
     (1, "1"),
+    ('ThisIsBeautifulDay', 'this_is_beautiful_day'),
+    ('Am7Days', 'am7_days'),
+    ('My3CodeIs4TimesBetter', 'my3_code_is4_times_better'),
+    (53, '53'),
 ]
 
 
