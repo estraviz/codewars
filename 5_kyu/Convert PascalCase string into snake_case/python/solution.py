@@ -1,12 +1,6 @@
 """Convert PascalCase string into snake_case"""
 
-from string import ascii_uppercase
-
 
 def to_underscore(string):
-    result = ""
-    for i, c in enumerate(str(string)):
-        if c in ascii_uppercase:
-            result += ('_' if i != 0 and i != len(string) else '')
-        result += c.lower()
-    return result
+    s = str(string)
+    return s[0].lower() + "".join(('_' + c.lower() if c.isupper() else c) for c in s[1:])
