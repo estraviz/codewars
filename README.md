@@ -3,6 +3,7 @@ These are my solutions to [codewars](http://codewars.com) [code katas](https://e
 * Python (mainly)
 * Java (gradually)
 * SQL (from time to time)
+* Go (slowly increasing)
 * Haskell (scarcely :)
 
 **IMPORTANT NOTE:**
