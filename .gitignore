@@ -6,4 +6,5 @@ __pycache__/
 venv*/
 .idea
 .Rhistory
-out/
+out
+.python-version
