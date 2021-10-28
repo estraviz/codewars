@@ -18,5 +18,9 @@ var testCases = []testCase{
 }
 
 func TestSingleStringCharacters(t *testing.T) {
-
+	for _, testCase := range testCases {
+		if Solve(testCase.s) != testCase.expected {
+			t.Errorf("%v should be %v\n", Solve(testCase.s), testCase.expected)
+		}
+	}
 }
