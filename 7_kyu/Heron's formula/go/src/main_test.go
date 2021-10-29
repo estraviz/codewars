@@ -13,6 +13,12 @@ type testCase struct {
 
 var testCases = []testCase{
 	{3, 4, 5, 6.0},
+	{3, 5, 4, 6.0},
+	{4, 3, 5, 6.0},
+	{4, 5, 3, 6.0},
+	{5, 3, 4, 6.0},
+	{5, 4, 3, 6.0},
+	{11, 13, 7, 38.49},
 }
 
 func TestCountRedBeads(t *testing.T) {

@@ -8,7 +8,7 @@ import (
 func Heron(a, b, c int) (area float32) {
     s := SemiPerimeter(a, b, c)
     radical := float64(s * (s - float32(a)) * (s - float32(b)) * (s - float32(c)))
-    return float32(math.Sqrt(radical))
+    return float32(math.Floor(math.Sqrt(radical) * 100) / 100)
 }
 
 func SemiPerimeter(a, b, c int) float32 {
