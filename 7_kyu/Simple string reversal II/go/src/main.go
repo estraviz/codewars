@@ -2,27 +2,22 @@
 package kata
 
 func Solve(s string, a, b int) string {
-	var first, second, third []rune
 
-    for i, c := range s {
-        if i < a {
-            first = append(first, c)
-        } else if i >= a && i <= b {
-            second = append(second, c)
-        } else {
-            third = append(third, c)
-        }
+    if b < len(s) {
+        return s[:a] + reverse(s[a:b+1]) + s[b+1:]
+    } else {
+        return s[:a] + reverse(s[a:len(s)])
     }
-
-    return string(first) + string(reverse(second)) + string(third)
 }
 
-func reverse(r []rune) []rune {
+func reverse(s string) string {
+
     var res []rune
+    r := []rune(s)
 
     for i := len(r) - 1; i >= 0; i-- {
         res = append(res, r[i])
     }
 
-    return res
+    return string(res)
 }
