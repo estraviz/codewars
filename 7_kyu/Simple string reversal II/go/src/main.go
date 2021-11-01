@@ -6,7 +6,7 @@ func Solve(s string, a, b int) string {
     if b < len(s) {
         return s[:a] + reverse(s[a:b+1]) + s[b+1:]
     } else {
-        return s[:a] + reverse(s[a:len(s)])
+        return s[:a] + reverse(s[a:])
     }
 }
 
