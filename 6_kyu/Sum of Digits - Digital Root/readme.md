@@ -1,6 +1,6 @@
 # Sum of Digits / Digital Root
 
-## Description
+## Description
 
 In this kata, you must create a `digital root` function.
 
