@@ -4,4 +4,4 @@ from collections import Counter
 
 def freq_seq(s, sep):
     count = Counter(s)
-    return "".join(str(count[c]) + sep for c in s)[:-1]
+    return sep.join(str(count[c]) for c in s)
