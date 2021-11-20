@@ -6,13 +6,13 @@ Consider integer numbers from `0` to `n - 1` written down along the circle in su
 
 Given `n` and `firstNumber`/`first_number`/`first-number`, find the number which is written in the radially opposite position to `firstNumber`.
 
-### Example
+### Example
 
 For `n = 10` and `firstNumber = 2`, the output should be `7`.
 
 ![](./img/example.png)
 
-### Input/Output
+### Input/Output
 
 * `[input]` integer `n`
 
