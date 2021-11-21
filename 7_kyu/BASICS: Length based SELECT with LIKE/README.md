@@ -1,6 +1,6 @@
 # BASICS: Length based SELECT with LIKE
 
-## Description
+## Description
 
 You will need to create SELECT statement in conjunction with LIKE.
 
