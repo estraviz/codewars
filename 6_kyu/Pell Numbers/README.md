@@ -1,6 +1,6 @@
 # Pell Numbers
 
-## Description
+## Description
 
 The [Pell sequence](https://en.wikipedia.org/wiki/Pell_number) is the sequence of integers defined by the initial values:
 
