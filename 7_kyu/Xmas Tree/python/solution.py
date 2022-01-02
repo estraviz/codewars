@@ -1,5 +1,7 @@
 # Xmas Tree
 def xmastree(n):
-    return [
-        "_" * (n-i) + "#" * (2*i-1) + "_" * (n-i) for i in range(1, n+1)
-        ] + 2 * ["_" * (n-1) + "#" + "_" * (n-1)]
+    return [get_row(n, i) for i in range(1, n+1)] + 2*[get_row(n, 1)]
+
+
+def get_row(n, k):
+    return "_"*(n-k) + "#"*(2*k-1) + "_"*(n-k)
