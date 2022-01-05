@@ -1,12 +1,12 @@
-# Coprime Validator
+# Coprime Validator
 
-## Description
+## Description
 
 Write a program to determine if the two given numbers are coprime. A pair of numbers are coprime if their greatest shared factor is `1`.
 
 The inputs will always be two positive integers between `2` and `99`.
 
-## Examples
+## Examples
 
 `20` and `27`:
 
