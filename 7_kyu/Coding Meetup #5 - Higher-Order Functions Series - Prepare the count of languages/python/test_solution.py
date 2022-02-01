@@ -65,14 +65,32 @@ def test_example_case_3():
 
 def test_example_case_4():
     list4 = [
-        { 'firstName': 'Alexander', 'lastName': 'F.', 'country': 'Russia', 'continent': 'Europe', 'age': 89, 'language': 'Java' },
-        { 'firstName': 'Fatima', 'lastName': 'K.', 'country': 'Saudi Arabia', 'continent': 'Asia', 'age': 21, 'language': 'Clojure' },
-        { 'firstName': 'Mark', 'lastName': 'G.', 'country': 'Scotland', 'continent': 'Europe', 'age': 22, 'language': 'JavaScript' },
-        { 'firstName': 'Nikola', 'lastName': 'H.', 'country': 'Serbia', 'continent': 'Europe', 'age': 29, 'language': 'Python' },
-        { 'firstName': 'Jakub', 'lastName': 'I.', 'country': 'Slovakia', 'continent': 'Europe', 'age': 28, 'language': 'Java' },
-        { 'firstName': 'Luka', 'lastName': 'J.', 'country': 'Slovenia', 'continent': 'Europe', 'age': 29, 'language': 'Clojure' }
-        ]
-    answer4 = { 'Clojure': 2, 'JavaScript': 1, 'Python': 1, 'Java': 2 }
+        {
+            'firstName': 'Alexander', 'lastName': 'F.', 'country': 'Russia',
+            'continent': 'Europe', 'age': 89, 'language': 'Java'
+        },
+        {
+            'firstName': 'Fatima', 'lastName': 'K.', 'country': 'Saudi Arabia',
+            'continent': 'Asia', 'age': 21, 'language': 'Clojure'
+        },
+        {
+            'firstName': 'Mark', 'lastName': 'G.', 'country': 'Scotland',
+            'continent': 'Europe', 'age': 22, 'language': 'JavaScript'
+        },
+        {
+            'firstName': 'Nikola', 'lastName': 'H.', 'country': 'Serbia',
+            'continent': 'Europe', 'age': 29, 'language': 'Python'
+        },
+        {
+            'firstName': 'Jakub', 'lastName': 'I.', 'country': 'Slovakia',
+            'continent': 'Europe', 'age': 28, 'language': 'Java'
+        },
+        {
+            'firstName': 'Luka', 'lastName': 'J.', 'country': 'Slovenia',
+            'continent': 'Europe', 'age': 29, 'language': 'Clojure'
+        }
+    ]
+    answer4 = {'Clojure': 2, 'JavaScript': 1, 'Python': 1, 'Java': 2}
     assert count_languages(list4) == answer4
 
 
