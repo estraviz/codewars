@@ -1,6 +1,6 @@
 # 99 Problems, #1: last in list
 
-## Description
+## Description
 
 Write a function `last` that accepts a list and returns the last element in the list.
 
