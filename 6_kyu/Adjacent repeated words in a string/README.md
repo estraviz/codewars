@@ -1,4 +1,4 @@
-# Adjacent repeated words in a string
+# Adjacent repeated words in a string
 
 ## Description
 
@@ -8,7 +8,7 @@ As as aS you can see, it's not easy to spot those errors, especially if words di
 
 Write a function that counts the number of sections repeating the same word (case insensitive). The occurence of two or more equal words next after each other counts as one.
 
-### Examples
+### Examples
 
 ```python
 "dog cat"                  -->  0
