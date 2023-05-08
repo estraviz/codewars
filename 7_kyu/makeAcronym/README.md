@@ -1,6 +1,6 @@
 # makeAcronym
 
-## Description
+## Description
 
 Implement a function called makeAcronym that returns the first letters of each word in a passed in string.
 
