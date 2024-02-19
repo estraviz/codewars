@@ -1,4 +1,4 @@
-# Coefficients of the Quadratic Equation
+# Quadratic Coefficients Solver
 
 ## Description
 
