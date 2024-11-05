@@ -1,18 +1,10 @@
 pub fn is_leap_year(year: i32) -> bool {
-    let mut is_leap: bool = false;
-
-    if year % 4 == 0 {
-        is_leap = true;
-
-        if year % 100 == 0 {
-            is_leap = false;
-
-            if year % 400 == 0 {
-                is_leap = true;
-            }
-        }
+    match year {
+        year if year % 400 == 0 => true,
+        year if year % 100 == 0 => false,
+        year if year % 4 == 0 => true,
+        _ => false,
     }
-    return is_leap;
 }
 
 #[cfg(test)]
