@@ -1,4 +1,4 @@
-pub fn is_leap_year(year: i32) -> bool {
+fn is_leap_year(year: i32) -> bool {
     match year {
         year if year % 400 == 0 => true,
         year if year % 100 == 0 => false,
