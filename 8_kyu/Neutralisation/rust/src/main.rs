@@ -1,13 +1,11 @@
 fn neutralise(s1: &str, s2: &str) -> String {
-    let mut result: String = "".to_string();
-    for (s1i, s2i) in s1.chars().zip(s2.chars()) {
-        let inter: char = match s1i == s2i {
+    s1.chars()
+        .zip(s2.chars())
+        .map(|(s1i, s2i)| match s1i == s2i {
             true => s1i,
             _ => '0',
-        };
-        result.push(inter)
-    }
-    result
+        })
+        .collect()
 }
 
 #[cfg(test)]
