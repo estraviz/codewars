@@ -7,27 +7,25 @@ fn greet(language: &str) -> &str {
 }
 
 fn create_greetings() -> HashMap<&'static str, &'static str> {
-    let mut greetings: HashMap<&str, &str> = HashMap::new();
-
-    greetings.insert("english", "Welcome");
-    greetings.insert("czech", "Vitejte");
-    greetings.insert("danish", "Velkomst");
-    greetings.insert("dutch", "Welkom");
-    greetings.insert("estonian", "Tere tulemast");
-    greetings.insert("finnish", "Tervetuloa");
-    greetings.insert("flemish", "Welgekomen");
-    greetings.insert("french", "Bienvenue");
-    greetings.insert("german", "Willkommen");
-    greetings.insert("irish", "Failte");
-    greetings.insert("italian", "Benvenuto");
-    greetings.insert("latvian", "Gaidits");
-    greetings.insert("lithuanian", "Laukiamas");
-    greetings.insert("polish", "Witamy");
-    greetings.insert("spanish", "Bienvenido");
-    greetings.insert("swedish", "Valkommen");
-    greetings.insert("welsh", "Croeso");
-
-    greetings
+    HashMap::from([
+        ("english", "Welcome"),
+        ("czech", "Vitejte"),
+        ("danish", "Velkomst"),
+        ("dutch", "Welkom"),
+        ("estonian", "Tere tulemast"),
+        ("finnish", "Tervetuloa"),
+        ("flemish", "Welgekomen"),
+        ("french", "Bienvenue"),
+        ("german", "Willkommen"),
+        ("irish", "Failte"),
+        ("italian", "Benvenuto"),
+        ("latvian", "Gaidits"),
+        ("lithuanian", "Laukiamas"),
+        ("polish", "Witamy"),
+        ("spanish", "Bienvenido"),
+        ("swedish", "Valkommen"),
+        ("welsh", "Croeso"),
+    ])
 }
 
 #[cfg(test)]
