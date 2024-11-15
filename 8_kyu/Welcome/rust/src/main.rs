@@ -1,9 +1,10 @@
 use std::collections::HashMap;
 
 fn greet(language: &str) -> &str {
-    create_greetings()
-        .get(&language)
-        .unwrap_or_else(|| &"Welcome")
+    match create_greetings().get(&language) {
+        Some(&welcome) => &welcome,
+        _ => "Welcome"
+    }
 }
 
 fn create_greetings() -> HashMap<&'static str, &'static str> {
