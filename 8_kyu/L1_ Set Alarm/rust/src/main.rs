@@ -1,6 +1,6 @@
 fn set_alarm(employed: bool, vacation: bool) -> bool {
-    match (employed == true) && (vacation == false) {
-        true => true,
+    match (employed, vacation) {
+        (true, false) => true,
         _ => false,
     }
 }
