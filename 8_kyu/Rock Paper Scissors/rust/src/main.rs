@@ -1,17 +1,9 @@
 fn rps(p1: &str, p2: &str) -> &'static str {
-    if p1 == p2 {
-        "Draw!"
-    } else if p1_win(p1, p2) {
-        "Player 1 won!"
-    } else {
-        "Player 2 won!"
+    match (p1, p2) {
+        ("scissors", "paper") | ("paper", "rock") | ("rock", "scissors") => "Player 1 won!",
+        ("scissors", "rock") | ("paper", "scissors") | ("rock", "paper") => "Player 2 won!",
+        _ => "Draw!",
     }
-}
-
-fn p1_win(p1: &str, p2: &str) -> bool {
-    p1 == "scissors" && p2 == "paper"
-        || p1 == "paper" && p2 == "rock"
-        || p1 == "rock" && p2 == "scissors"
 }
 
 #[cfg(test)]
