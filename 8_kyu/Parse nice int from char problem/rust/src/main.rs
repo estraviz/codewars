@@ -1,10 +1,5 @@
 fn get_age(age: &str) -> u32 {
-    age.chars()
-        .nth(0)
-        .unwrap()
-        .to_string()
-        .parse()
-        .expect("Not a valid number")
+    age[..1].parse().expect("Not a valid number")
 }
 
 #[test]
