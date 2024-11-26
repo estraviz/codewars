@@ -1,5 +1,5 @@
 fn correct_tail(body: &str, tail: char) -> bool {
-    body.chars().nth(body.chars().count() - 1) == Some(tail)
+    body.ends_with(tail)
 }
 
 #[cfg(test)]
