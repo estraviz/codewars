@@ -1,19 +1,14 @@
 fn to_csv_text(array: &[Vec<i8>]) -> String {
-    let mut output = String::new();
-
-    for vec in array {
-        for (i, digit) in &mut vec.iter().enumerate() {
-            output += digit.to_string().as_str();
-
-            if i == vec.len() - 1 {
-                output += "\n";
-            } else {
-                output += ",";
-            }
-        }
-    }
-
-    output[..output.len() - 1].to_string()
+    array
+        .iter()
+        .map(|v| {
+            v.iter()
+                .map(|e| e.to_string())
+                .collect::<Vec<String>>()
+                .join(",")
+        })
+        .collect::<Vec<String>>()
+        .join("\n")
 }
 
 #[cfg(test)]
