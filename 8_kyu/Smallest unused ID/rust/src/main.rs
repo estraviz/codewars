@@ -1,11 +1,11 @@
 fn next_id(ids: &[usize]) -> usize {
-    let mut num: usize = 0;
+    let iter = (0..ids.len()).skip_while(|x| ids.contains(&x)).next();
 
-    while ids.contains(&num) {
-        num += 1;
+    if iter.is_none() {
+        ids.len()
+    } else {
+        iter.unwrap()
     }
-
-    return num;
 }
 
 #[cfg(test)]
