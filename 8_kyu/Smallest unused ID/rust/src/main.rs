@@ -1,11 +1,7 @@
 fn next_id(ids: &[usize]) -> usize {
-    let iter = (0..ids.len()).skip_while(|x| ids.contains(&x)).next();
-
-    if iter.is_none() {
-        ids.len()
-    } else {
-        iter.unwrap()
-    }
+    (0..=ids.len())
+        .find(|x| !ids.contains(x))
+        .unwrap_or(ids.len())
 }
 
 #[cfg(test)]
