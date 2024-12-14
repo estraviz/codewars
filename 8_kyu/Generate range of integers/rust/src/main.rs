@@ -1,11 +1,5 @@
 fn generate_range(min: usize, max: usize, step: usize) -> Vec<usize> {
-    let mut v: Vec<usize> = [].to_vec();
-
-    for x in (min..=max).step_by(step) {
-        v.push(x);
-    }
-
-    v
+    (min..=max).step_by(step).collect()
 }
 
 #[cfg(test)]
