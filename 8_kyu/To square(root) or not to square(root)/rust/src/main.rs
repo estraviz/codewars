@@ -1,16 +1,14 @@
 fn square_or_square_root(arr: &[u32]) -> Vec<u32> {
-    let mut res: Vec<u32> = Vec::new();
-
-    for num in arr.iter() {
-        let root: f64 = (*num as f64).sqrt().floor() as f64;
-        let res_elem: u32 = match f64::from(root * root) == (*num as f64) {
-            true => root as u32,
-            _ => num * num,
-        };
-        res.push(res_elem);
-    }
-
-    res
+    arr.iter()
+        .map(|num| {
+            let root: f64 = (*num as f64).sqrt().floor() as f64;
+            let res_elem: u32 = match f64::from(root * root) == (*num as f64) {
+                true => root as u32,
+                _ => num * num,
+            };
+            res_elem
+        })
+        .collect()
 }
 
 #[cfg(test)]
