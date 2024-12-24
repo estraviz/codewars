@@ -1,6 +1,6 @@
 fn add_length(s: &str) -> Vec<String> {
-    s.split(' ')
-        .map(|x| x.to_string() + " " + &x.len().to_string())
+    s.split_whitespace()
+        .map(|x| format!("{} {}", x, x.len()))
         .collect()
 }
 
