@@ -1,12 +1,5 @@
 fn stringy(size: usize) -> String {
-    let mut output: String = String::new();
-
-    for i in 0..size {
-        let digits: String = ((i + 1) % 2).to_string();
-        output += &digits;
-    }
-
-    output
+    (0..size).map(|x| ((x + 1) % 2).to_string()).collect()
 }
 
 #[cfg(test)]
