@@ -3,7 +3,8 @@ fn well(x: &[&str]) -> &'static str {
 
     match count {
         0 => "Fail!",
-        1 | 2 => "Publish!",
+        1 => "Publish!",
+        2 => "Publish!",
         _ => "I smell a series!",
     }
 }
