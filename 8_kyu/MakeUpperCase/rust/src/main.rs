@@ -1,5 +1,5 @@
 fn make_upper_case(s: &str) -> String {
-    s.to_uppercase().to_string()
+    s.to_uppercase()
 }
 
 #[cfg(test)]
