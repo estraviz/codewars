@@ -1,29 +1,21 @@
 fn points(games: &[String]) -> u32 {
-    let mut points: u32 = 0;
-
-    let mut result: Vec<&str>;
-    let mut home: u32;
-    let mut away: u32;
-
-    for game in games.iter() {
-        result = game.split(":").collect();
-        home = to_u32(result[0]);
-        away = to_u32(result[1]);
-
-        points += match home > away {
-            true => 3,
-            _ => match home < away {
-                true => 0,
-                _ => 1,
-            },
-        }
-    }
-
-    points
+    games
+        .iter()
+        .map(|game| {
+            let Some((home, away)) = game.split_once(":") else {
+                return 0;
+            };
+            game_points(home, away)
+        })
+        .sum()
 }
 
-fn to_u32(x: &str) -> u32 {
-    x.parse::<u32>().unwrap()
+fn game_points(home: &str, away: &str) -> u32 {
+    match home.cmp(&away) {
+        std::cmp::Ordering::Greater => 3,
+        std::cmp::Ordering::Equal => 1,
+        std::cmp::Ordering::Less => 0,
+    }
 }
 
 #[cfg(test)]
