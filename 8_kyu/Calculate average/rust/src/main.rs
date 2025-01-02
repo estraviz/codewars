@@ -1,12 +1,8 @@
 fn find_average(slice: &[f64]) -> f64 {
-    if slice.is_empty() {
-        return 0_f64;
+    match slice.len() {
+        0 => 0_f64,
+        _ => slice.iter().copied().reduce(|x, y| x + y).unwrap() / slice.len() as f64,
     }
-
-    let tot_sum: f64 = slice.iter().copied().reduce(|x, y| x + y).unwrap();
-    let length: f64 = slice.len() as f64;
-
-    tot_sum / length
 }
 
 #[cfg(test)]
