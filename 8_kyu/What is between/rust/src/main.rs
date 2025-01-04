@@ -1,11 +1,5 @@
 fn between(a: i16, b: i16) -> Vec<i16> {
-    let mut output: Vec<i16> = vec![];
-
-    for i in a..=b {
-        output.push(i);
-    }
-
-    output
+    (a..=b).collect()
 }
 
 #[cfg(test)]
