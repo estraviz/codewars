@@ -1,12 +1,10 @@
 fn multi_table(n: u64) -> String {
-    let mut res = String::new();
-
-    for i in 1..=10 {
-        let s: String = format!("{} * {} = {}\n", i, n, i * n);
-        res.push_str(&s);
-    }
-
-    res.strip_suffix("\n").unwrap().to_string()
+    (1..=10)
+        .map(|i| format!("{} * {} = {}\n", i, n, i * n))
+        .collect::<String>()
+        .strip_suffix("\n")
+        .unwrap()
+        .to_string()
 }
 
 #[cfg(test)]
